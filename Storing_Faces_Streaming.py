@@ -12,7 +12,7 @@ faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalfa
 
 contador = 0
 while True:
-    ret, frame, captura.read()
+    ret, frame, = captura.read()
     frame = cv2.flip(frame,1)
     gris = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     frameAux = frame.copy()
