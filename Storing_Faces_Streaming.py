@@ -27,7 +27,7 @@ while True:
         rostro = frameAux[y:y+h,x:x+w]
         rostro = cv2.resize(rostro,(150,150),interpolation=cv2.INTER_CUBIC)
         if k == ord ('s'):
-            cv2.imwrite('Rostro encontrado/rostro_{}.jpg'.format(contador))
+            cv2.imwrite('Rostros encontrados/rostro_{}.jpg'.format(contador),rostro)
             cv2.imshow('rostro', rostro)
             contador = contador +1
     
