@@ -1,4 +1,3 @@
-from ast import While
 import cv2
 import os
 
